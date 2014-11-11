@@ -1,0 +1,18 @@
+{
+  "name": "Meadowlark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "meadowlark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shaji",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.10.1",
+    "express3-handlebars": "^0.5.2",
+    "formidable": "^1.0.15",
+    "jquery-file-upload-middleware": "^0.1.7",
+    "mongoose": "^3.8.19"
+  }
+}
