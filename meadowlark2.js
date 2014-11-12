@@ -23,11 +23,18 @@ app.use(express.static(__dirname + '/public'));
 var headerTemplate = fs.readFileSync(__dirname + '/views/partials/headerReferences.hbs','utf8');
 var footerTemplate = fs.readFileSync(__dirname + '/views/partials/footer.hbs','utf8');
 var utilityBarTemplate = fs.readFileSync(__dirname + '/views/partials/utilityBar.hbs','utf8');
+var menuTemplate = fs.readFileSync(__dirname + '/views/partials/menu.hbs','utf8');
+var submenuTemplate = fs.readFileSync(__dirname + '/views/partials/submenu.hbs','utf8');
+var loginTemplate = fs.readFileSync(__dirname + '/views/partials/loginSection.hbs','utf8');
+
 
 // now register the partials
-hbs.registerPartial('headerReferences',headerTemplate );
-hbs.registerPartial('utilityBar',utilityBarTemplate );
-hbs.registerPartial('footer',footerTemplate );
+hbs.registerPartial('headerReferences',headerTemplate);
+hbs.registerPartial('utilityBar',utilityBarTemplate);
+hbs.registerPartial('loginSection',loginTemplate);
+hbs.registerPartial('menuBar',menuTemplate);
+hbs.registerPartial('submenu',submenuTemplate );
+hbs.registerPartial('footer',footerTemplate);
 
 
 var fortunes = [

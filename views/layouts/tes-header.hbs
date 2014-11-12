@@ -3,6 +3,7 @@
 <head>
     <!-- Header section -->
    {{> headerReferences}}
+    <!-- End Header section -->
 
 </head>
 
@@ -18,8 +19,9 @@
 
 <div id="header" class="clearfix">
 
-    <!-- UtilityBar SECTION -->
+    <!-- UtilityBar section -->
     {{> utilityBar}}
+    <!-- End UtilityBar section -->
 
     <div id="headerLogos">
 			<span class="header" id="logo">
@@ -46,33 +48,21 @@
             <a href="noscript.aspx" onclick="javascript:return false;" ><span>My TES</span></a></div>
     </div>
 
-    <div id="nav">
-        <ul class="main clearfix">
+    <!-- menu bar -->
+    {{> menuBar}}
+    <!-- End menu bar -->
 
-            {{#each locationsData}}
-                <li ><a href={{href}} class='jobs selected'>{{title}}</a></li>
-            {{/each}}
+    <!-- submenu bar -->
+    {{> submenu }}
+    <!-- End submenu bar -->
 
-            </li><li class='itemAlt'><a href='/article.aspx?storyCode=6000367&navcode=286' class='help'>Help</a>
-            </li><li class='itemAlt'><a href='/article.aspx?storyCode=6000208&navCode=285' class='about'>About us</a></li>
-            <li ><a href='http://www.tes.co.uk/premium/premium-products' class='products'>Products</a></li>
-        </ul>
-    </div>
-
-    <div id="subnav">
-        <ul class="secondary">
-            <li><a href='topSection.aspx?navCode=247'>Career advice</a></li><li><a href='salarySearch.aspx?navcode=101'>Salary checker</a></li><li><a href='myalerts.aspx?navCode=471'>My jobs</a></li><li><a href='/talentbank.aspx'>Talent Bank</a></li>
-        </ul>
-    </div>
-
-
-
+    <!-- Start of main body -->
     {{{body}}}
+    <!-- End of main body -->
 
-
-    <!-- FOOTER SECTION -->
+    <!-- footer section -->
     {{> footer}}
-
+    <!-- End footer section -->
     </div>
 </body>
 </html>
