@@ -1,0 +1,32 @@
+<div class="utilityBar">
+
+    <div class="utilityBarContent">
+
+        <form class="search" action="/keyword.search" id="frmSearch" method="get">
+            <div class="searchTypeContainer resources">
+                <a href="#" class="searchType" rel="nofollow">
+                    <span class="glass"></span>&nbsp;<span class="searchArrow"></span>
+                </a>
+                <div class="searchTypeDropDown dropDown" style="display: none">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+            <fieldset>
+                <legend>Search</legend>
+                <label for="type">Search type</label>
+                <select id="type" name="area">
+                    <option value="resources">Resources</option><option value="jobs" selected>Jobs</option><option value="community">Community</option><option value="news">School News</option><option value="feNews">FE News</option><option value="thePaper">Publications</option><option value="people">People</option>
+                </select>
+                <label for="search">Search</label>
+                <input type="text" class="search" id="search" name="keywords"  />
+            </fieldset>
+        </form>
+
+        <ul id="personalLinks" class="notauth">
+            <li class="login"><a href="https://account.tes.co.uk/LogOn?rtn=http%3a%2f%2fwww.tes.co.uk%2fjobs%2f&exp=1">Log in</a></li>
+            <li class="register"><a href="https://account.tes.co.uk/Register">REGISTER FOR FREE</a></li>
+        </ul>
+
+    </div>
+</div>

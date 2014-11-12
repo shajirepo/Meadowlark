@@ -1,35 +1,34 @@
 var express = require('express');
-var app = express();
-
-// setup handlebars view engine
-var handlebars = require('express3-handlebars').create({defaultLayout:'tes-header'}); //use the main.handlebars master page
-app.engine('handlebars', handlebars.engine);
-app.set('view engine','handlebars');
-
-hbs = require('hbs')
+var hbs = require('express-hbs');
 var fs = require('fs');
 
-//hbs.registerPartial(__dirname + '/views/partials');
-var headerTemplate = fs.readFileSync(__dirname + '/views/partials/headerReferences.handlebars','utf8');
-var footerTemplate = fs.readFileSync(__dirname + '/views/partials/footer.handlebars','utf8');
-var utilityBarTemplate = fs.readFileSync(__dirname + '/views/partials/utilityBar.handlebars','utf8');
+var app = express();
 
+var hbsConfig = hbs.express3(
+    {
+        defaultLayout:__dirname + '/views/layouts/tes-header.hbs',
+        layoutsDir : __dirname + '/views/layouts',
+        partialsDir: __dirname + '/views/partials'
+    });
 
-app.use(function(req,res,next){
-    if (!res.locals.partials) res.locals.partials ={};
-    res.locals.partials.headerReferences = headerTemplate;
-    res.locals.partials.utilityBar = utilityBarTemplate;
-    res.locals.partials.footer = footerTemplate;
-    next();
-});
-//hbs.registerPartial('headSection',headerTemplate );
-
-//app.set('view engine','handlebars');
-//app.engine('handlebars',hbs.__express);
+// setup handlebars view engine
+app.engine('hbs', hbsConfig);
+app.set('view engine','hbs');
 
 app.set('port',process.env.PORT || 3000);
-
 app.use(express.static(__dirname + '/public'));
+
+
+// read in the partials
+var headerTemplate = fs.readFileSync(__dirname + '/views/partials/headerReferences.hbs','utf8');
+var footerTemplate = fs.readFileSync(__dirname + '/views/partials/footer.hbs','utf8');
+var utilityBarTemplate = fs.readFileSync(__dirname + '/views/partials/utilityBar.hbs','utf8');
+
+// now register the partials
+hbs.registerPartial('headerReferences',headerTemplate );
+hbs.registerPartial('utilityBar',utilityBarTemplate );
+hbs.registerPartial('footer',footerTemplate );
+
 
 var fortunes = [
     "Conquer your fears or they will conquer you.", "Rivers need springs.",
@@ -59,11 +58,6 @@ var locations = [
            title: 'FE NEWS'
        }
     ];
-
-//app.use(function(req,res){
-//    res.render('layouts/tes-header', {locationsData: locations,headSection: headerTemplate, utilityBarSection:utilityBarTemplate,footerSection:footerTemplate})
-//
-//})
 
 app.get('/', function (req,res){
     //res.type('text/plain');
