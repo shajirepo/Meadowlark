@@ -1,10 +1,10 @@
 var express = require('express');
 var hbs = require('express-hbs');
-var fs = require('fs');
 
 var app = express();
 
 var routes = require('./routes/routes')(app);
+var utils = require('./modules/utility');
 
 
 var hbsConfig = hbs.express3(
@@ -22,7 +22,7 @@ app.set('port',process.env.PORT || 3000);
 app.use(express.static(__dirname + '/public'));
 
 
-registerPartials(hbs.partialsDir);
+utils.registerPartials(hbs);
 
 
 
@@ -48,24 +48,6 @@ registerPartials(hbs.partialsDir);
 //    })
 //})
 
-
-//register all partials
-function registerPartials(partialsFolder) {
-
-    // get all the partial filenames in the partials folder
-    var filenames = fs.readdirSync(partialsFolder);
-
-    // register each partial file and use the filename as the partial name
-    filenames.forEach(function (filename) {
-        var matches = /^([^.]+).hbs$/.exec(filename);
-        if (!matches) {
-            return;
-        }
-        var name = matches[1];
-        var template = fs.readFileSync(partialsFolder + '/' + filename, 'utf8');
-        hbs.registerPartial(name, template);
-    });
-}
 
 app.listen(app.get('port'), function(){
     console.log('Express started on localhost:' + app.get('port'));
