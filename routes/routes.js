@@ -3,6 +3,9 @@ module.exports = function(app) {
 
     // route to the default home page
     app.get('/', function (req, res) {
+
+        var a = "false";
+        var loggedInValue = (a==req.query['loggedIn']);
         var menuItems =
         [
             {   href: '/jobs/', title: 'JOBS'},
@@ -12,7 +15,7 @@ module.exports = function(app) {
             {   href: 'http://news.tes.co.uk/further-education/', title: 'FE NEWS'}
         ];
 
-        res.render('home',{menuData: menuItems});
+        res.render('home',{menuData: menuItems, loggedIn:loggedInValue});
     });
 
     // route to /about page
