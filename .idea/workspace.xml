@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dfc77e2-f2ef-419e-9844-0fd6be859def" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/meadowlark2.js" afterPath="$PROJECT_DIR$/meadowlark2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/routes.js" afterPath="$PROJECT_DIR$/routes/routes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Meadowlark.iws" />
@@ -35,22 +37,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="meadowlark2.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="meadowlark2.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/meadowlark2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75" vertical-offset="1476" max-vertical-offset="2070">
-              <caret line="119" column="58" selection-start-line="119" selection-start-column="58" selection-end-line="119" selection-end-column="58" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="705">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding>
+                <element signature="e#600#641#0" expanded="false" />
+                <element signature="n#!!block;n#registerPartials#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="routes.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-              <folding />
+            <state vertical-scroll-proportion="0.54611653" vertical-offset="0" max-vertical-offset="412">
+              <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+              <folding>
+                <element signature="e#98#666#0" expanded="false" />
+                <element signature="e#775#1178#0" expanded="false" />
+                <element signature="e#1355#1448#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -464,21 +473,25 @@
       <workItem from="1415446032647" duration="40000" />
       <workItem from="1415446113556" duration="12215000" />
       <workItem from="1415882356881" duration="1599000" />
-      <workItem from="1415900691648" duration="2043000" />
+      <workItem from="1415900691648" duration="4020000" />
     </task>
     <task id="LOCAL-00001" summary="Moved the partials registering to a function">
       <created>1415904137635</created>
       <updated>1415904137635</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Moved the partials registering to a function">
+      <created>1415904161506</created>
+      <updated>1415904161510</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17204000" />
+    <option name="totallyTimeSpent" value="19181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -499,8 +512,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21324718" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21324718" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -548,7 +561,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="151" max-vertical-offset="1995">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#600#641#0" expanded="false" />
+            <element signature="n#!!block;n#registerPartials#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -713,19 +729,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/routes.js">
+    <entry file="file://$PROJECT_DIR$/meadowlark2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="705">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="e#600#641#0" expanded="false" />
+            <element signature="n#!!block;n#registerPartials#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meadowlark2.js">
+    <entry file="file://$PROJECT_DIR$/routes/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75" vertical-offset="1476" max-vertical-offset="2070">
-          <caret line="119" column="58" selection-start-line="119" selection-start-column="58" selection-end-line="119" selection-end-column="58" />
-          <folding />
+        <state vertical-scroll-proportion="0.54611653" vertical-offset="0" max-vertical-offset="412">
+          <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+          <folding>
+            <element signature="e#98#666#0" expanded="false" />
+            <element signature="e#775#1178#0" expanded="false" />
+            <element signature="e#1355#1448#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
