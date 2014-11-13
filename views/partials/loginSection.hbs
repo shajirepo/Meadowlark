@@ -1,59 +1,61 @@
 {{#if loggedIn}}
+    <ul id="personalLinks" class="auth below50">
+
+        <li class="profileGroup">
+            <a href="#">
+                <div class="imgborder"><img src="/avatar_compressed/7/9/3/avatars909793.jpg" id="avatar"></div>
+                <div class="profileDetails">
+                    <div class="personName">Shaji Nadesan<span class="profileArrow"></span></div>
+                    <div id="progress" style=""><div id="progressPercentage" style="width:71%;">&nbsp;</div></div>
+                </div>
+            </a>
+            <div class="ucpMnu" style="width: 175px;">
+                <ul>
+                    <li class="mnuHeader">
+                        account and settings
+                    </li>
+                    <li><a href="/myAccountSettings.aspx?navcode=650">My Account</a></li><li><a href="/mypublicprofile.aspx">My Profile</a></li>
+                </ul>
+            </div>
+            <div class="altProfile tab">Account and settings</div>
+        </li><li class="ucpIcon myresources"><a href="#" class="">my resources</a>
+        <div class="ucpMnu">
+            <ul>
+                <li class="mnuHeader">
+                    my resources
+                </li>
+                <li><a href="/MyFavouriteResources.aspx?navCode=640">Favourites</a></li><li><a href="/MyResources.aspx?navcode=472">My shared resources</a></li><li><a href="/tespro-community.aspx">TES Pro</a></li><li><a href="/ResourcesSavedSearch.aspx">Saved searches</a></li><li><a href="/ManageFollows.aspx?page=1&amp;SFBC_FilterOption=2048">Following</a></li><li><a href="/ResourceUpload.aspx?navcode=98">Add new resources</a></li>
+            </ul>
+        </div>
+        <div class="altResources tab">Resources</div>
+    </li><li class="ucpIcon mycareer"><a href="#" class="">my career</a>
+        <div class="ucpMnu">
+            <ul>
+                <li class="mnuHeader">
+                    my career
+                </li>
+                <li><a href="/myalerts.aspx?navCode=471">My Jobs</a></li><li><a href="/myalertsbuilder.aspx">Job alert builder</a></li><li><a href="/talentbank.aspx">Talent bank</a></li>
+            </ul>
+        </div>
+        <div class="altCareer tab">Career</div>
+    </li><li id="community" class="ucpIcon mycommunity"><a href="#" class="">my community</a>
+        <div class="ucpMnu">
+            <ul>
+                <li class="mnuHeader">
+                    my community
+                </li>
+                <li><a href="http://community.tes.co.uk/user/conversations/default.aspx" class="inbox">Inbox</a></li>
+                <li><a href="/mypublicprofile.aspx?profileTab=groups">My Groups</a></li><li><a href="/mypublicprofile.aspx?profileTab=hotlist">Hotlist</a></li><li><a href="/mypublicprofile.aspx?profileTab=friends">Friends</a></li><li><a href="/mypublicprofile.aspx?profileTab=activity">Activity</a></li>
+            </ul>
+        </div>
+        <div class="altCommunity tab">Community</div>
+    </li><li class="logout last"><a href="signout.aspx" class="log-out">Log out</a></li>
+    </ul>
+
+{{else}}
         <ul id="personalLinks" class="notauth">
             <li class="login"><a href="https://account.tes.co.uk/LogOn?rtn=http%3a%2f%2fwww.tes.co.uk%2fjobs%2f&exp=1">Log in</a></li>
             <li class="register"><a href="https://account.tes.co.uk/Register">REGISTER FOR FREE</a></li>
         </ul>
-{{else}}
-        <ul id="personalLinks" class="auth below50">
 
-    <li class="profileGroup">
-        <a href="#">
-            <div class="imgborder"><img src="/avatar_compressed/7/9/3/avatars909793.jpg" id="avatar"></div>
-            <div class="profileDetails">
-                <div class="personName">Shaji Nadesan<span class="profileArrow"></span></div>
-                <div id="progress" style=""><div id="progressPercentage" style="width:71%;">&nbsp;</div></div>
-            </div>
-        </a>
-        <div class="ucpMnu" style="width: 175px;">
-            <ul>
-                <li class="mnuHeader">
-                    account and settings
-                </li>
-                <li><a href="/myAccountSettings.aspx?navcode=650">My Account</a></li><li><a href="/mypublicprofile.aspx">My Profile</a></li>
-            </ul>
-        </div>
-        <div class="altProfile tab">Account and settings</div>
-    </li><li class="ucpIcon myresources"><a href="#" class="">my resources</a>
-    <div class="ucpMnu">
-        <ul>
-            <li class="mnuHeader">
-                my resources
-            </li>
-            <li><a href="/MyFavouriteResources.aspx?navCode=640">Favourites</a></li><li><a href="/MyResources.aspx?navcode=472">My shared resources</a></li><li><a href="/tespro-community.aspx">TES Pro</a></li><li><a href="/ResourcesSavedSearch.aspx">Saved searches</a></li><li><a href="/ManageFollows.aspx?page=1&amp;SFBC_FilterOption=2048">Following</a></li><li><a href="/ResourceUpload.aspx?navcode=98">Add new resources</a></li>
-        </ul>
-    </div>
-    <div class="altResources tab">Resources</div>
-</li><li class="ucpIcon mycareer"><a href="#" class="">my career</a>
-    <div class="ucpMnu">
-        <ul>
-            <li class="mnuHeader">
-                my career
-            </li>
-            <li><a href="/myalerts.aspx?navCode=471">My Jobs</a></li><li><a href="/myalertsbuilder.aspx">Job alert builder</a></li><li><a href="/talentbank.aspx">Talent bank</a></li>
-        </ul>
-    </div>
-    <div class="altCareer tab">Career</div>
-</li><li id="community" class="ucpIcon mycommunity"><a href="#" class="">my community</a>
-    <div class="ucpMnu">
-        <ul>
-            <li class="mnuHeader">
-                my community
-            </li>
-            <li><a href="http://community.tes.co.uk/user/conversations/default.aspx" class="inbox">Inbox</a></li>
-            <li><a href="/mypublicprofile.aspx?profileTab=groups">My Groups</a></li><li><a href="/mypublicprofile.aspx?profileTab=hotlist">Hotlist</a></li><li><a href="/mypublicprofile.aspx?profileTab=friends">Friends</a></li><li><a href="/mypublicprofile.aspx?profileTab=activity">Activity</a></li>
-        </ul>
-    </div>
-    <div class="altCommunity tab">Community</div>
-</li><li class="logout last"><a href="signout.aspx" class="log-out">Log out</a></li>
-</ul>
 {{/if}}

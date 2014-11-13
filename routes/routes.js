@@ -5,7 +5,7 @@ module.exports = function(app) {
     app.get('/', function (req, res) {
 
         var a = "false";
-        var loggedInValue = (a==req.query['loggedIn']);
+        var loggedInValue = (a == req.query['loggedIn']);
         var menuItems =
         [
             {   href: '/jobs/', title: 'JOBS'},
@@ -15,11 +15,15 @@ module.exports = function(app) {
             {   href: 'http://news.tes.co.uk/further-education/', title: 'FE NEWS'}
         ];
 
+
         res.render('home',{menuData: menuItems, loggedIn:loggedInValue});
     });
 
     // route to /about page
     app.get('/about', function (req, res) {
+
+        var a = "false";
+        var loggedInValue = (a==req.query['loggedIn']);
 
         var fortunes =
         [
@@ -31,7 +35,7 @@ module.exports = function(app) {
         ];
 
         var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
-        res.render('about', {fortune: randomFortune});
+        res.render('about', {fortune: randomFortune, loggedIn:loggedInValue});
 
     });
 
@@ -41,7 +45,7 @@ module.exports = function(app) {
         res.render('404');
     });
 
-//custom 500 page
+    //custom 500 page
     app.use(function(err, req, res, next){
         console.error(err.stack);
         res.status(500);
