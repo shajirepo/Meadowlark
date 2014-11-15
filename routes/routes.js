@@ -4,8 +4,8 @@ module.exports = function(app) {
     // route to the default home page
     app.get('/', function (req, res) {
 
-        var a = "false";
-        var loggedInValue = (a == req.query['loggedIn']);
+        var a = "true";
+        var loggedInValue = (a === req.query['loggedIn']);
         var menuItems =
         [
             {   href: '/jobs/', title: 'JOBS'},

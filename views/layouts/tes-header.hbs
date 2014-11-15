@@ -57,9 +57,25 @@
     <!-- End submenu bar -->
 
     <!-- Start of main body -->
-    {{{body}}}
-    <!-- End of main body -->
+    <div id="content" class="clearfix">
+        <!-- top_1 -->
+        {{> top_1 }}
 
+        <div class="r main">
+
+            <!-- left_1 -->
+            {{> left_1}}
+
+            <div class="g8">
+
+                {{{body}}}
+
+            </div>
+        </div>
+
+
+    <!-- End of main body -->
+    </div>
     <!-- footer section -->
     {{> footer}}
     <!-- End footer section -->

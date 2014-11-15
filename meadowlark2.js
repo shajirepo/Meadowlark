@@ -22,9 +22,9 @@ app.set('port',process.env.PORT || 3000);
 app.use(express.static(__dirname + '/public'));
 
 
-utils.registerPartials(hbs);
+utils.registerPartials(hbs,'');
 
-
+utils.registerPartials(hbs,'/jobs');
 
 //var formidable = require('formidable');
 //
