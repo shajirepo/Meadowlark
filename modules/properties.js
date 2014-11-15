@@ -2,8 +2,13 @@
  * Created by shaji on 14/11/14.
  */
 
-function properties() {
-    isLoggedIn:"true";
+module.exports = {
+
+    auth:function(){
+
+        isLoggedIn:"false";
+    }
 }
 
-module.exports = new properties();
+
+

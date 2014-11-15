@@ -7,36 +7,23 @@ module.exports = function(app) {
     app.get('/', function (req, res) {
 
         var a = "true";
-        //auth = new properties.auth();
-        properties.isLoggedIn = (a === req.query['loggedIn']);
-        //data.setLoggedIn(loggedInValue);
+        properties.auth.isLoggedIn = (a === req.query['loggedIn']);
 
-
-        res.render('home',{menuData: data.menuItems, loggedIn:properties.isLoggedIn});
+        res.render('home',{menuData: data.menuItems, loggedIn:properties.auth.isLoggedIn, navData: data.navItems});
     });
 
     // route to /about page
     app.get('/about', function (req, res) {
 
-
-        var fortunes =
-        [
-            "Conquer your fears or they will conquer you.",
-            "Rivers need springs.",
-            "Do not fear what you don't know.",
-            "You will have a pleasant surprise.",
-            "Whenever possible, keep it simple.",
-        ];
-
-        var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
-        res.render('about', {fortune: randomFortune, loggedIn:properties.isLoggedIn});
+        var randomFortune = data.fortunes[Math.floor(Math.random() * data.fortunes.length)];
+        res.render('about', {fortune: randomFortune, loggedIn:properties.auth.isLoggedIn});
 
     });
 
     //custom 404 page
     app.use(function(req,res){
         res.status(404);
-        res.render('404', {loggedIn:properties.isLoggedIn});
+        res.render('404', {loggedIn:properties.auth.isLoggedIn});
     });
 
     //custom 500 page
