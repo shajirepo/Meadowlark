@@ -22,8 +22,8 @@ module.exports = function(app) {
     // route to /about page
     app.get('/about', function (req, res) {
 
-        var a = "false";
-        var loggedInValue = (a==req.query['loggedIn']);
+        var a = "true";
+        var loggedInValue = (a === req.query['loggedIn']);
 
         var fortunes =
         [

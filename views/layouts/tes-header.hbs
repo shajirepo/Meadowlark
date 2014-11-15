@@ -30,23 +30,7 @@
     </div>
 
 
-
-
 </div>
-    <div id="myTes-wrapper" class="is-logged-in is-closed myTesArea">
-        <div id="myTes-container">
-            <div id="myTes-contentHolder">
-                <div id="myTes-content">
-                </div>
-            </div>
-            <div id="notification-contentHolder">
-                <div id="notification-content">
-                </div>
-            </div>
-        </div>
-        <div id="myTes-tab">
-            <a href="noscript.aspx" onclick="javascript:return false;" ><span>My TES</span></a></div>
-    </div>
 
     <!-- menu bar -->
     {{> menu}}
@@ -58,15 +42,22 @@
 
     <!-- Start of main body -->
     <div id="content" class="clearfix">
+
         <!-- top_1 -->
         {{> top_1 }}
+        <!--End  top_1 -->
 
         <div class="r main">
 
             <!-- left_1 -->
             {{> left_1}}
+            <!-- End left_1 -->
 
             <div class="g8">
+
+                <!-- nav box -->
+                {{> navigationBox }}
+                <!-- End nav box -->
 
                 {{{body}}}
 
