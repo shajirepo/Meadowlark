@@ -1,3 +1,4 @@
+var data = require('../modules/data.js')
 
 module.exports = function(app) {
 
@@ -6,24 +7,15 @@ module.exports = function(app) {
 
         var a = "true";
         var loggedInValue = (a === req.query['loggedIn']);
-        var menuItems =
-        [
-            {   href: '/jobs/', title: 'JOBS'},
-            {   href: '/teaching-resources/', title: 'RESOURCES'},
-            {   href: 'http://community.tes.co.uk', title: 'COMMUNITY'},
-            {   href: 'http://news.tes.co.uk', title: 'SCHOOL NEWS' },
-            {   href: 'http://news.tes.co.uk/further-education/', title: 'FE NEWS'}
-        ];
+        data.setLoggedIn(loggedInValue);
 
 
-        res.render('home',{menuData: menuItems, loggedIn:loggedInValue});
+        res.render('home',{menuData: data.menuItems, loggedIn:data.getLoggedIn()});
     });
 
     // route to /about page
     app.get('/about', function (req, res) {
 
-        var a = "true";
-        var loggedInValue = (a === req.query['loggedIn']);
 
         var fortunes =
         [
@@ -35,14 +27,14 @@ module.exports = function(app) {
         ];
 
         var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
-        res.render('about', {fortune: randomFortune, loggedIn:loggedInValue});
+        res.render('about', {fortune: randomFortune, loggedIn:data.getLoggedIn()});
 
     });
 
     //custom 404 page
     app.use(function(req,res){
         res.status(404);
-        res.render('404');
+        res.render('404', {loggedIn:data.getLoggedIn()});
     });
 
     //custom 500 page
