@@ -10,7 +10,7 @@ module.exports = function(app) {
         data.setLoggedIn(loggedInValue);
 
 
-        res.render('home',{menuData: data.menuItems, loggedIn:data.getLoggedIn()});
+        res.render('home',{menuData: data.menuItems, loggedIn:data.getLoggedIn()}); 
     });
 
     // route to /about page
