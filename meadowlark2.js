@@ -23,8 +23,9 @@ app.use(express.static(__dirname + '/public'));
 
 
 utils.registerPartials(hbs,'');
-
 utils.registerPartials(hbs,'/jobs');
+
+hbs.registerPartial('loggedOutState', '{loggedInOutState}')
 
 //var formidable = require('formidable');
 //
@@ -47,6 +48,11 @@ utils.registerPartials(hbs,'/jobs');
 //        res.redirect(303,'/thank-you');
 //    })
 //})
+
+var db = require('./model/navigation.js');
+
+
+
 
 
 app.listen(app.get('port'), function(){

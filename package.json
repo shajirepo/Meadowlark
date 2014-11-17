@@ -9,10 +9,11 @@
   "author": "Shaji",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "express": "~4.10.1",
-    "express3-handlebars": "~0.5.2",
     "body-parser": "~1.9.2",
+    "express": "~4.10.1",
+    "express-hbs": "~0.7.11",
+    "express3-handlebars": "~0.5.2",
     "hbs": "~2.7.0",
-    "express-hbs": "~0.7.11"
+    "mongoose": "^3.8.19"
   }
 }
