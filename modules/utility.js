@@ -22,3 +22,20 @@ exports.registerPartials = function(hbs, subDir) {
     });
 }
 
+
+
+exports.dbSetup = function(){
+
+    var mongoose = require('mongoose');
+    var config = require('../config.js');
+
+    var opts={
+        server: {
+            socketOptions: { keepAlive: 1 }
+        }
+    };
+
+    mongoose.connect(config.mongo.development.connectionString, opts);
+
+}
+

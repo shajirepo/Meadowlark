@@ -1,18 +1,11 @@
 /**
  * Created by admin on 17/11/2014.
  */
+
 var mongoose = require('mongoose');
-var credentials = require('./credentials.js');
+var Schema = mongoose.Schema;
 
-var opts={
-    server: {
-        socketOptions: { keepAlive: 1 }
-    }
-};
-
-mongoose.connect(credentials.mongo.development.connectionString, opts);
-
-var navigationSchema = mongoose.Schema({
+var navigationSchema = new Schema({
     href: String,
     title: String
 })

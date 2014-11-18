@@ -25,8 +25,11 @@ app.use(express.static(__dirname + '/public'));
 utils.registerPartials(hbs,'');
 utils.registerPartials(hbs,'/jobs');
 
-hbs.registerPartial('loggedOutState', '{loggedInOutState}')
-
+//hbs.registerPartial('loggedState', '{{>loggedOutState}}')
+//
+//if (("true" === "true")) {
+//    hbs.registerPartial('loggedState', '{{>loggedInState}}')
+//}
 //var formidable = require('formidable');
 //
 //app.get('/contest/vacation-photo', function(req,res){
@@ -49,9 +52,9 @@ hbs.registerPartial('loggedOutState', '{loggedInOutState}')
 //    })
 //})
 
-var db = require('./model/navigation.js');
+utils.dbSetup();
 
-
+var navigation = require('./model/navigation.js');
 
 
 
