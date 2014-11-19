@@ -56,7 +56,7 @@ utils.dbSetup();
 
 var navigation = require('./model/navigation.js');
 
-
+navigation.create();
 
 app.listen(app.get('port'), function(){
     console.log('Express started on localhost:' + app.get('port'));

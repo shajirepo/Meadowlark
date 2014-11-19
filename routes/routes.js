@@ -1,5 +1,6 @@
 var data = require('../modules/data.js');
 var properties = require('../modules/properties.js');
+var navigationItems = require('../model/navigation');
 
 module.exports = function(app) {
 
@@ -9,7 +10,8 @@ module.exports = function(app) {
         var a = "true";
         properties.auth.isLoggedIn = (a === req.query['loggedIn']);
 
-        res.render('home',{menuData: data.menuItems, loggedIn:properties.auth.isLoggedIn, navData: data.navItems});
+        //navigationItems.create();
+        res.render('home',{menuData: data.menuItems, loggedIn:properties.auth.isLoggedIn, navData: navigationItems.navItems});
     });
 
     // route to /about page
