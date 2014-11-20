@@ -1,6 +1,7 @@
 /**
  * Created by shaji on 16/11/14.
  */
+var navigationItems = require('../model/navigation');
 
     module.exports = {
         menuItems: [
@@ -33,4 +34,15 @@
             "Whenever possible, keep it simple.",
         ]
 
+    }
+
+    module.exports.jobshome = {
+        menuItems2: [
+            {   href: '/jobs/', title: 'JOBS2'},
+            {   href: '/teaching-resources/', title: 'RESOURCES'},
+            {   href: 'http://community.tes.co.uk', title: 'COMMUNITY'},
+            {   href: 'http://news.tes.co.uk', title: 'SCHOOL NEWS' },
+            {   href: 'http://news.tes.co.uk/further-education/', title: 'FE NEWS'}
+        ],
+        navItems2: navigationItems.navItems
     }

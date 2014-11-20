@@ -11,7 +11,11 @@ module.exports = function(app) {
         properties.auth.isLoggedIn = (a === req.query['loggedIn']);
 
         //navigationItems.create();
-        res.render('home',{menuData: data.menuItems, loggedIn:properties.auth.isLoggedIn, navData: navigationItems.navItems});
+        res.render('home',{
+            menuData: data.menuItems,
+            loggedIn:properties.auth.isLoggedIn,
+            navData: data.navItems
+        });
     });
 
     // route to /about page
