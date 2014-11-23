@@ -1,11 +1,14 @@
 var express = require('express');
 var hbs = require('express-hbs');
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
 
 var app = express();
 
-var routes = require('./routes/routes')(app);
-var utils = require('./modules/utility');
+app.use(cookieParser());
+app.use(session({secret: '1234567890QWERTY'}));
 
+var utils = require('./modules/utility');
 
 var hbsConfig = hbs.express3(
     {
@@ -20,7 +23,6 @@ app.set('view engine','hbs');
 
 app.set('port',process.env.PORT || 3000);
 app.use(express.static(__dirname + '/public'));
-
 
 utils.registerPartials(hbs,'');
 utils.registerPartials(hbs,'/jobs');
@@ -54,9 +56,9 @@ utils.registerPartials(hbs,'/jobs');
 
 utils.dbSetup();
 
-var navigation = require('./model/navigation.js');
-
-navigation.create();
+//var navigation = require('./model/navigation.js');
+//
+//navigation.create();
 
 app.listen(app.get('port'), function(){
     console.log('Express started on localhost:' + app.get('port'));

@@ -1,28 +1,27 @@
 var data = require('../modules/data.js');
 var properties = require('../modules/properties.js');
 var navigationItems = require('../model/navigation');
+var utility = require('../modules/utility.js');
 
+var sess;
 module.exports = function(app) {
 
     // route to the default home page
     app.get('/', function (req, res) {
 
-        var a = "true";
-        properties.auth.isLoggedIn = (a === req.query['loggedIn']);
+        sess = req.session;
 
-        //navigationItems.create();
-        res.render('home',{
-            menuData: data.menuItems,
-            loggedIn:properties.auth.isLoggedIn,
-            navData: data.navItems
-        });
+        var a = "true";
+        sess.isLoggedInValue = (a === req.query['loggedIn']);
+
+        res.render('home', { menuData: data.menuItems, navData: data.navItems });
     });
 
     // route to /about page
-    app.get('/about', function (req, res) {
+    app.get('/about',utility.isLoggedIn, function (req, res) {
 
         var randomFortune = data.fortunes[Math.floor(Math.random() * data.fortunes.length)];
-        res.render('about', {fortune: randomFortune, loggedIn:properties.auth.isLoggedIn});
+        res.render('about', {fortune: randomFortune, currentSession:req.session});
 
     });
 

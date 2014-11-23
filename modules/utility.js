@@ -22,8 +22,7 @@ exports.registerPartials = function(hbs, subDir) {
     });
 }
 
-
-
+//setup db connection
 exports.dbSetup = function(){
 
     var mongoose = require('mongoose');
@@ -38,4 +37,20 @@ exports.dbSetup = function(){
     mongoose.connect(config.mongo.development.connectionString, opts);
 
 }
+
+//gets the logged in status
+exports.isLoggedIn =function(req, res, next) {
+
+    if (req.session.isLoggedInValue) {
+        next();
+    } else {
+        res.send('Unauthorized -' + req.session.isLoggedInValue, 401);
+    }
+}
+
+
+
+
+
+
 

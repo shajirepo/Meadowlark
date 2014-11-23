@@ -1,4 +1,5 @@
-{{#if loggedIn}}
+
+{{#if currentSession.isLoggedInValue}}
     {{> loggedInState }}
 {{else}}
     {{> loggedOutState }}
