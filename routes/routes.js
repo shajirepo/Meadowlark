@@ -9,12 +9,8 @@ var sess;
 module.exports = function(app) {
 
     // route to the default home page
-    app.get('/', function (req, res) {
+    app.get('/',utility.isLoggedIn, function (req, res) {
 
-        var a = "true";
-        if(req.query['loggedIn']) {
-            req.session.isLoggedInValue = (a === req.query['loggedIn']);
-        }
         res.render('home', { menuData: data.menuItems, navData: data.navItems });
     });
 

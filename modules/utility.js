@@ -1,8 +1,6 @@
 /**
  * Created by admin on 13/11/2014.
  */
-var cookieParser = require('cookie-parser');
-var session = require('express-session');
 
 var fs = require('fs');
 
@@ -42,6 +40,11 @@ exports.dbSetup = function(){
 
 //gets the logged in status
 exports.isLoggedIn =function(req, res, next) {
+
+    if(req.query['loggedIn']) {
+        var a = "true";
+        req.session.isLoggedInValue = (a === req.query['loggedIn']);
+    }
     next();
 }
 
