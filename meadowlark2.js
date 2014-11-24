@@ -8,6 +8,9 @@ var app = express();
 app.use(cookieParser());
 app.use(session({secret: '1234567890QWERTY'}));
 
+var routes = require('./routes/routes')(app);
+var utils = require('./modules/utility');
+
 var utils = require('./modules/utility');
 
 var hbsConfig = hbs.express3(
@@ -64,6 +67,4 @@ app.listen(app.get('port'), function(){
     console.log('Express started on localhost:' + app.get('port'));
 
 });
-
-
 

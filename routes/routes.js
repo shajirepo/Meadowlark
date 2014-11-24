@@ -2,6 +2,8 @@ var data = require('../modules/data.js');
 var properties = require('../modules/properties.js');
 var navigationItems = require('../model/navigation');
 var utility = require('../modules/utility.js');
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
 
 var sess;
 module.exports = function(app) {
@@ -9,11 +11,10 @@ module.exports = function(app) {
     // route to the default home page
     app.get('/', function (req, res) {
 
-        sess = req.session;
-
         var a = "true";
-        sess.isLoggedInValue = (a === req.query['loggedIn']);
-
+        if(req.query['loggedIn']) {
+            req.session.isLoggedInValue = (a === req.query['loggedIn']);
+        }
         res.render('home', { menuData: data.menuItems, navData: data.navItems });
     });
 

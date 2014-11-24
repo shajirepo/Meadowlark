@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dfc77e2-f2ef-419e-9844-0fd6be859def" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/session.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/users.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/loginSection.hbs" afterPath="$PROJECT_DIR$/views/partials/loginSection.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/meadowlark2.js" afterPath="$PROJECT_DIR$/meadowlark2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/routes.js" afterPath="$PROJECT_DIR$/routes/routes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/utility.js" afterPath="$PROJECT_DIR$/modules/utility.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -35,11 +31,11 @@
       <file leaf-file-name="routes.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="720">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
               <folding>
-                <element signature="e#857#955#0" expanded="false" />
-                <element signature="e#1022#1115#0" expanded="false" />
+                <element signature="e#971#1069#0" expanded="false" />
+                <element signature="e#1136#1229#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -62,9 +58,14 @@
       <file leaf-file-name="data.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="482" max-vertical-offset="954">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+              <folding>
+                <element signature="e#138#492#0" expanded="false" />
+                <element signature="e#513#1445#0" expanded="false" />
+                <element signature="e#1466#1721#0" expanded="false" />
+                <element signature="e#1760#2188#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,25 +73,35 @@
       <file leaf-file-name="utility.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/utility.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
-              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
-                <element signature="e#142#671#0" expanded="false" />
-                <element signature="e#385#667#0" expanded="false" />
-                <element signature="e#723#977#0" expanded="false" />
-                <element signature="e#1052#1201#0" expanded="false" />
+                <element signature="e#229#758#0" expanded="false" />
+                <element signature="e#472#754#0" expanded="false" />
+                <element signature="e#810#1064#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="meadowlark2.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="loginSection.hbs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/partials/loginSection.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.040449437" vertical-offset="0" max-vertical-offset="445">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="meadowlark2.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/meadowlark2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16101696" vertical-offset="356" max-vertical-offset="900">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="846">
+              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding>
-                <element signature="e#763#822#0" expanded="false" />
+                <element signature="e#418#594#0" expanded="false" />
+                <element signature="e#852#911#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -145,9 +156,9 @@
         <option value="$PROJECT_DIR$/data/users.json" />
         <option value="$PROJECT_DIR$/routes/session.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/routes/routes.js" />
         <option value="$PROJECT_DIR$/views/partials/loginSection.hbs" />
         <option value="$PROJECT_DIR$/meadowlark2.js" />
+        <option value="$PROJECT_DIR$/routes/routes.js" />
         <option value="$PROJECT_DIR$/modules/utility.js" />
       </list>
     </option>
@@ -590,7 +601,7 @@
       <workItem from="1416143576247" duration="3901000" />
       <workItem from="1415993079037" duration="4768000" />
       <workItem from="1415999285945" duration="11032000" />
-      <workItem from="1416258008614" duration="55353000" />
+      <workItem from="1416258008614" duration="58722000" />
     </task>
     <task id="LOCAL-00001" summary="Moved the partials registering to a function">
       <created>1415904137635</created>
@@ -656,11 +667,15 @@
       <created>1416525714217</created>
       <updated>1416525714217</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add session and refactored">
+      <created>1416785577699</created>
+      <updated>1416785577699</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108599000" />
+    <option name="totallyTimeSpent" value="111968000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -741,7 +756,8 @@
     <MESSAGE value="add mongoose" />
     <MESSAGE value="add credential" />
     <MESSAGE value="add config and refactored" />
-    <option name="LAST_COMMIT_MESSAGE" value="add config and refactored" />
+    <MESSAGE value="add session and refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="add session and refactored" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -826,7 +842,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="151" max-vertical-offset="1995">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="e#763#822#0" expanded="false" />
+            <element signature="e#418#594#0" expanded="false" />
+            <element signature="e#852#911#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1086,42 +1103,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/routes.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/express-session/session/session.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="720">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="e#857#955#0" expanded="false" />
-            <element signature="e#1022#1115#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/loginSection.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24269663" vertical-offset="0" max-vertical-offset="445">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/utility.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="e#142#671#0" expanded="false" />
-            <element signature="e#385#667#0" expanded="false" />
-            <element signature="e#723#977#0" expanded="false" />
-            <element signature="e#1052#1201#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="608" max-vertical-offset="954">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33262712" vertical-offset="275" max-vertical-offset="2340">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -1138,13 +1123,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06567796" vertical-offset="4181" max-vertical-offset="10476">
+          <caret line="234" column="23" selection-start-line="234" selection-start-column="23" selection-end-line="234" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/meadowlark2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16101696" vertical-offset="356" max-vertical-offset="900">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="846">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
-            <element signature="e#763#822#0" expanded="false" />
+            <element signature="e#418#594#0" expanded="false" />
+            <element signature="e#852#911#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+          <folding>
+            <element signature="e#138#492#0" expanded="false" />
+            <element signature="e#513#1445#0" expanded="false" />
+            <element signature="e#1466#1721#0" expanded="false" />
+            <element signature="e#1760#2188#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/utility.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="e#229#758#0" expanded="false" />
+            <element signature="e#472#754#0" expanded="false" />
+            <element signature="e#810#1064#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="e#971#1069#0" expanded="false" />
+            <element signature="e#1136#1229#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/loginSection.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.040449437" vertical-offset="0" max-vertical-offset="445">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
