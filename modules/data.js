@@ -13,7 +13,7 @@ var navigationItems = require('../model/navigation');
         ],
 
         navItems: [
-            {   href: '/nursery-teaching-jobs/', title: 'NURSERY'},
+            {   href: '/nursery-teaching-jobs/', title: 'NURSERY2'},
             {   href: '/primary-teaching-jobs/', title: 'PRIMARY'},
             {   href: '/middle-teaching-jobs/', title: 'MIDDLE'},
             {   href: '/secondary-teaching-jobs/', title: 'SECONDARY' },

@@ -5,13 +5,12 @@ var utility = require('../modules/utility.js');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 
-var sess;
 module.exports = function(app) {
 
     // route to the default home page
     app.get('/',utility.isLoggedIn, function (req, res) {
 
-        res.render('home', { menuData: data.menuItems, navData: data.navItems });
+        res.render('home', { menuData: data.menuItems, navData:navigationItems.navItems });
     });
 
     // route to /about page
