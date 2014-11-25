@@ -3,6 +3,7 @@ var hbs = require('express-hbs');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var utils = require('./modules/utility');
+var data = require('./modules/data');
 
 var app = express();
 
@@ -13,6 +14,7 @@ app.use(cookieParser());
 app.use(session({secret: '1234567890QWERTY'}));
 
 require('./routes/routes')(app);
+
 
 var hbsConfig = hbs.express3(
     {

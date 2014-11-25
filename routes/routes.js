@@ -2,15 +2,20 @@ var data = require('../modules/data.js');
 var properties = require('../modules/properties.js');
 var navigationItems = require('../model/navigation');
 var utility = require('../modules/utility.js');
-var jobItems = require('../model/job');
+var jobs = require('../model/job');
+var navigationController = require('../controller/navigations');
+
 
 module.exports = function(app) {
 
     // route to the default home page
     app.get('/',utility.isLoggedIn, function (req, res) {
 
-        jobItems.create(req,res);
-        res.render('home', { menuData: data.menuItems, navData:navigationItems.navItems });
+        //jobItems.create(req,res);
+        res.render('home', {
+            menuData: data.menuItems,
+            navData:navigationItems.navItems,
+            featuredJobsData:jobs.jobItems});
     });
 
     // route to /about page

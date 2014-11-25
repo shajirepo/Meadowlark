@@ -2,6 +2,7 @@
  * Created by shaji on 16/11/14.
  */
 var navigationItems = require('../model/navigation');
+var jobs = require('../model/job');
 
     module.exports = {
         menuItems: [
@@ -45,4 +46,6 @@ var navigationItems = require('../model/navigation');
             {   href: 'http://news.tes.co.uk/further-education/', title: 'FE NEWS'}
         ],
         navItems2: navigationItems.navItems
+
+       // jobItems:jobs.jobItems
     }

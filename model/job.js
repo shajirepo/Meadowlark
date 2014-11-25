@@ -16,6 +16,7 @@ var jobSchema = new Schema({
     TSL_OrganisationId: Number,
     shortDescription: String,
     jobStartDate: Date,
+    location: String,
     externalId: String
 })
 
@@ -35,6 +36,7 @@ module.exports.create = function ( req, res ) {
         TSL_OrganisationId : '1055170',
         shortDescription : 'As a key member of the British School of Chicagos teaching team',
         jobStartDate: ' ',
+        location: 'China',
         externalId: '04C6H70021'
     }).save();
 
@@ -43,10 +45,12 @@ module.exports.create = function ( req, res ) {
         jobClosingDate: ' 2014-11-28 00:00:00 ',
         jobAdvertisementDate: ' 2014-11-19 00:00:00 ',
         jobAdvertisementClosingDate: ' 2014-11-28 23:59:00 ',
-        packageId: ' 168 ', StatusId: ' 2 ',
+        packageId: ' 168 ',
+        StatusId: ' 2 ',
         TSL_OrganisationId: ' 1055170 ',
         shortDescription: ' As a key member of the British School of Chicagos teaching team',
         jobStartDate: ' ',
+        location: 'Chicago',
         externalId: ' 04C6H70020 '
     }).save();
 
@@ -60,20 +64,37 @@ module.exports.create = function ( req, res ) {
         TSL_OrganisationId: ' 1055170 ',
         shortDescription: ' As a key member of the British School of Chicago ? s teaching team',
         jobStartDate: ' ',
-        externalId: ' 04C6H70019 '
+        externalId: ' 04C6H70019 ',
+        location: 'France',
     }).save();
 
      new Job({ JobId: ' 277823 ',
          jobTitle:'Teacher Music',
-         JobClosingDate: ' 2014-11-28 00:00:00 ',
-         JobAdvertisementDate: ' 2014-11-19 00:00:00 ',
-         JobAdvertisementClosingDate: ' 2014-11-28 23:59:00 ',
-         PackageId: ' 168 ', StatusId: ' 2 ',
+         sobClosingDate: ' 2014-11-28 00:00:00 ',
+         jobAdvertisementDate: ' 2014-11-19 00:00:00 ',
+         jobAdvertisementClosingDate: ' 2014-11-28 23:59:00 ',
+         packageId: ' 168 ',
+         statusId: ' 2 ',
          TSL_OrganisationId: '1055170',
-         ShortDescription: ' As a key member of the British School of Chicago ? s teaching team',
-         JobStartDate: ' ',
-         ExternalId: '04C6H70018 '
+         shortDescription: ' As a key member of the British School of Chicago ? s teaching team',
+         jobStartDate: ' ',
+         location: 'Germany',
+         externalId: '04C6H70018 '
      }).save();
+
+    new Job({ JobId: ' 277823 ',
+        jobTitle:'Teacher of Mathematics',
+        jobClosingDate: ' 2014-11-28 00:00:00 ',
+        jobAdvertisementDate: ' 2014-11-19 00:00:00 ',
+        jobAdvertisementClosingDate: ' 2014-11-28 23:59:00 ',
+        packageId: ' 168 ',
+        statusId: ' 2 ',
+        TSL_OrganisationId: '1055170',
+        shortDescription: ' As a key member of the British School of Chicago ? s teaching team',
+        jobStartDate: ' ',
+        location: 'London',
+        externalId: '04C6H70018 '
+    }).save();
 
 //    new Job({ JobId: ' 277822 ', JobClosingDate: ' 2014 - 11 - 28 00 : 00 : 00 ', JobAdvertisementDate: ' 2014 - 11 - 19 00 : 00 : 00 ', JobAdvertisementClosingDate: ' 2014 - 11 - 28 23 : 59 : 00 ', PackageId: ' 168 ', StatusId: ' 2 ' TSL_OrganisationId: ' 1055170 ', ShortDescription: ' As a key member of the British School of Chicago ? s teaching team,
 //                        a Teacher of Mandarin will be acco ', JobStartDate: ' ', ExternalId: ' 04C6H70017 '}).save();
@@ -106,14 +127,14 @@ module.exports.create = function ( req, res ) {
 }
 
 
-// Find all movies.
+// Find all jobs.
 Job.find(function(err, jobs) {
     if (err) return console.error(err);
     module.exports.jobItems = jobs;
     //console.dir(navigation);
 });
 
-// Find a single movie by name.
+// Find a single jobs by name.
 Job.findOne({ title: 'NURSERY' }, function(err, nursery) {
     if (err) return console.error(err);
     console.dir(nursery);
