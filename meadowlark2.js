@@ -30,6 +30,7 @@ utils.registerPartials(hbs,'');
 utils.registerPartials(hbs,'/jobs');
 
 utils.dbSetup();
+//utils.serviceSetup();
 
 app.listen(app.get('port'), function(){
     console.log('Express started on localhost:' + app.get('port'));

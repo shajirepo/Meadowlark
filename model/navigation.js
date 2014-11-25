@@ -13,6 +13,7 @@ var navigationSchema = new Schema({
 var Navigation = mongoose.model('Navigation', navigationSchema);
 module.exports = Navigation;
 
+/** Add navigation items ***/
 //module.exports.create = function ( req, res ) {
 //       new Navigation({
 //            href: '/nursery-teaching-jobs/',

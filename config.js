@@ -9,5 +9,12 @@ module.exports = {
         production: {
             connectionString: 'mongodb://<dbuser>:<dbpassword>@ds063889.mongolab.com:63889/shaji-test-db'
         }
+    },
+    mongoService:{
+        development:{
+
+            connectionString:'http://27787458.ngrok.com/db/jobs'
+        }
     }
+
 };

@@ -38,6 +38,20 @@ exports.dbSetup = function(){
 
 }
 
+exports.serviceSetup = function(){
+    var mongoose = require('mongoose');
+    var config = require('../config.js');
+
+    var opts={
+        server: {
+            socketOptions: { keepAlive: 1 }
+        }
+    };
+
+    mongoose.connect(config.mongoService.development.connectionString, opts);
+
+}
+
 //gets the logged in status
 exports.isLoggedIn =function(req, res, next) {
 
