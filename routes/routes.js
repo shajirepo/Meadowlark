@@ -1,30 +1,22 @@
-var data = require('../modules/data.js');
 var properties = require('../modules/properties.js');
-var navigationItems = require('../model/navigation');
 var utility = require('../modules/utility.js');
 var jobs = require('../model/job');
-var navigationController = require('../controller/navigations');
-
+var navController = require('../controller/navigations');
+var jobController = require('../controller/jobs');
 
 module.exports = function(app) {
 
     // route to the default home page
-    app.get('/',utility.isLoggedIn, function (req, res) {
+    app.get('/',utility.isLoggedIn, navController.index);
+    app.get('/',utility.isLoggedIn, jobController.featuredJobs);
 
-        //jobItems.create(req,res);
-        res.render('home', {
-            menuData: data.menuItems,
-            navData:navigationItems.navItems,
-            featuredJobsData:jobs.jobItems});
-    });
+//    app.get('/*', function(req, res, next){
+//        res.setHeader('Last-Modified', (new Date()).toUTCString());
+//        next();
+//    });
 
     // route to /about page
-    app.get('/about',utility.isLoggedIn, function (req, res) {
-
-        var randomFortune = data.fortunes[Math.floor(Math.random() * data.fortunes.length)];
-        res.render('about', {fortune: randomFortune, currentSession:req.session});
-
-    });
+    app.get('/about',utility.isLoggedIn, navController.about);
 
     //custom 404 page
     app.use(function(req,res){
