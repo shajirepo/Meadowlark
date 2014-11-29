@@ -8,12 +8,6 @@ module.exports = function(app) {
 
     // route to the default home page
     app.get('/',utility.isLoggedIn, navController.index);
-    app.get('/',utility.isLoggedIn, jobController.featuredJobs);
-
-//    app.get('/*', function(req, res, next){
-//        res.setHeader('Last-Modified', (new Date()).toUTCString());
-//        next();
-//    });
 
     // route to /about page
     app.get('/about',utility.isLoggedIn, navController.about);

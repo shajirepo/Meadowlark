@@ -2,10 +2,7 @@ var navigation = require('mongoose').model('Navigation');
 var data = require('../modules/data.js');
 var jobs = require('./jobs');
 
-//res.render('home', {
-//    menuData: data.menuItems,
-//    navData:navigationItems.navItems,
-//    featuredJobsData:jobs.jobItems});
+
 
 exports.index =  function(req, res, next) {
     navigation.find({ }, function (err, navdata) {

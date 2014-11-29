@@ -4,6 +4,7 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var utils = require('./modules/utility');
 var data = require('./modules/data');
+var jobs = require('./controller/jobs');
 
 var app = express();
 
@@ -12,6 +13,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.use(cookieParser());
 app.use(session({secret: '1234567890QWERTY'}));
+app.use(jobs.featuredJobs);
 
 require('./routes/routes')(app);
 
