@@ -1,25 +1,30 @@
-var navigation = require('mongoose').model('Navigation');
-var data = require('../modules/data.js');
-var jobs = require('./jobs');
+var navigations = require('../model/navigation');
+var jobs = require('./jobs')
+var data = require('../modules/data')
 
 
-
-exports.index =  function(req, res, next) {
-    navigation.find({ }, function (err, navdata) {
+var allNavItems;
+exports.navData =  function getNavData (req, res, next) {
+    navigations.find({},function(err, navItems) {
         if (err) return next(err);
+        console.dir(navItems);
+        allNavItems = navItems;
+        module.exports.navData = allNavItems;
+        next();
 
-        res.render('home', {
-            menuData: data.menuItems,
-            navData: navdata,
-            featuredJobsData:jobs.featuredJobs
-        });
     });
+}
+
+exports.index =  function (req, res) {
+
+    res.render('home', {navData:allNavItems, featuredJobsData:jobs.featuredJobs, currentSession: req.session});
+
 }
 
 exports.about =  function (req, res) {
 
     var randomFortune = data.fortunes[Math.floor(Math.random() * data.fortunes.length)];
-    res.render('about', {fortune: randomFortune, currentSession: req.session});
+    res.render('about', {fortune: randomFortune, navData:allNavItems,featuredJobsData:jobs.featuredJobs, currentSession: req.session});
 
 }
 

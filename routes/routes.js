@@ -2,7 +2,6 @@ var properties = require('../modules/properties.js');
 var utility = require('../modules/utility.js');
 var jobs = require('../model/job');
 var navController = require('../controller/navigations');
-var jobController = require('../controller/jobs');
 
 module.exports = function(app) {
 
