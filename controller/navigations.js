@@ -13,27 +13,30 @@ exports.navData =  function getNavData (req, res, next) {
     });
 }
 
-exports.index =  function (req, res) {
+exports.menuData = function(req,res,next) {
+    req.menuItems = data.menuItems;
+    next();
+}
 
+exports.index =  function (req, res) {
     res.render('home', {
+        menuData: req.menuItems,
         navData:req.navAll,
         featuredJobsData:req.featuredJobs,
         currentSession: req.session
     });
-
 }
 
 exports.about =  function (req, res) {
-
     var randomFortune = data.fortunes[Math.floor(Math.random() * data.fortunes.length)];
 
     res.render('about', {
         fortune: randomFortune,
+        menuData: req.menuItems,
         navData: req.navAll,
         featuredJobsData: req.featuredJobs,
         currentSession: req.session
     });
-
 }
 
 

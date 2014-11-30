@@ -15,7 +15,8 @@ app.use(express.static(__dirname + '/public'));
 app.use(cookieParser());
 app.use(session({secret: '1234567890QWERTY'}));
 
-app .use('/',navigations.navData)
+app.use('/', navigations.menuData)
+        .use('/',navigations.navData)
         .use('/',jobs.featuredJobs)
 
 
