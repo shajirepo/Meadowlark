@@ -10,7 +10,7 @@ exports.featuredJobs =  function featuredJobs (req, res, next) {
     jobs.find({},function(err, jobs) {
         if (err) return next(err);
         console.dir('JOBS; ' + jobs);
-        module.exports.featuredJobs =jobs;
+        req.featuredJobs =jobs;
         next();
 
     });
