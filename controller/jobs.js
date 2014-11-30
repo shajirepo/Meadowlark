@@ -4,9 +4,13 @@
 
 var jobs = require('../model/job');
 
+exports.createJobs = function(req,res){
+    jobs.create(req,res);
+}
 
 
-exports.featuredJobs =  function featuredJobs (req, res, next) {
+exports.featuredJobs =  function (req, res, next) {
+   //jobs.create(req,res);
     jobs.find({},function(err, jobs) {
         if (err) return next(err);
         console.dir('JOBS; ' + jobs);
@@ -16,4 +20,15 @@ exports.featuredJobs =  function featuredJobs (req, res, next) {
     });
 }
 
+
+exports.jobOfWeek =  function (req, res, next) {
+    // jobs.create(req,res);
+    jobs.find(function(err, jobs) {
+        if (err) return next(err);
+        console.dir('JOBWEEK; ' + jobs);
+        req.jobOfWeek =jobs;
+        next();
+
+    });
+}
 

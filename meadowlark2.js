@@ -16,8 +16,11 @@ app.use(cookieParser());
 app.use(session({secret: '1234567890QWERTY'}));
 
 app.use('/', navigations.menuData)
-        .use('/',navigations.navData)
-        .use('/',jobs.featuredJobs)
+        //.use(jobs.createJobs)
+        .use(navigations.navData)
+        .use(jobs.featuredJobs)
+        .use(jobs.jobOfWeek)
+
 
 
 require('./routes/routes')(app);

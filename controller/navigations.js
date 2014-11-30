@@ -3,7 +3,7 @@ var jobs = require('./jobs')
 var data = require('../modules/data')
 
 
-exports.navData =  function getNavData (req, res, next) {
+exports.navData =  function (req, res, next) {
     navigations.find({},function(err, navItems) {
         if (err) return next(err);
         console.dir('NAV: ' + navItems);
@@ -23,6 +23,7 @@ exports.index =  function (req, res) {
         menuData: req.menuItems,
         navData:req.navAll,
         featuredJobsData:req.featuredJobs,
+        jobOfWeekData:req.jobOfWeek,
         currentSession: req.session
     });
 }
