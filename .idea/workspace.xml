@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dfc77e2-f2ef-419e-9844-0fd6be859def" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/partials/jobs/jobOfWeek.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/job.js" afterPath="$PROJECT_DIR$/model/job.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/partials/jobs/jobOfWeek.hbs" afterPath="$PROJECT_DIR$/views/partials/jobs/jobOfWeek.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/jobs.js" afterPath="$PROJECT_DIR$/controller/jobs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/meadowlark2.js" afterPath="$PROJECT_DIR$/meadowlark2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/navigations.js" afterPath="$PROJECT_DIR$/controller/navigations.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/tes-header.hbs" afterPath="$PROJECT_DIR$/views/layouts/tes-header.hbs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Meadowlark.iws" />
@@ -31,21 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tes-header.hbs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/layouts/tes-header.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.851851" vertical-offset="1003" max-vertical-offset="1800">
-              <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="navigations.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/navigations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
-              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="666">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="e#393#444#0" expanded="false" />
                 <element signature="e#735#1036#0" expanded="false" />
@@ -54,12 +41,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jobs.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="jobs.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/jobs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="0.3436754" vertical-offset="0" max-vertical-offset="432">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#42#0" expanded="false" />
+                <element signature="e#119#148#0" expanded="false" />
+                <element signature="e#472#669#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jobOfWeek.hbs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="jobOfWeek.hbs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/partials/jobs/jobOfWeek.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33245382" vertical-offset="288" max-vertical-offset="3222">
-              <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+            <state vertical-scroll-proportion="-16.0" vertical-offset="144" max-vertical-offset="936">
+              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
@@ -92,15 +83,16 @@
       <file leaf-file-name="job.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/job.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="444" max-vertical-offset="1188">
-              <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="702">
+              <caret line="145" column="56" selection-start-line="145" selection-start-column="56" selection-end-line="145" selection-end-column="56" />
               <folding>
-                <element signature="e#606#1166#0" expanded="false" />
-                <element signature="e#1189#1750#0" expanded="false" />
-                <element signature="e#1773#2315#0" expanded="false" />
-                <element signature="e#2339#2894#0" expanded="false" />
-                <element signature="e#2917#3486#0" expanded="false" />
-                <element signature="e#3497#3854#0" expanded="false" />
+                <element signature="e#138#475#0" expanded="false" />
+                <element signature="e#591#10957#0" expanded="false" />
+                <element signature="e#629#1189#0" expanded="false" />
+                <element signature="e#1212#1773#0" expanded="false" />
+                <element signature="e#1796#2338#0" expanded="false" />
+                <element signature="e#2362#2917#0" expanded="false" />
+                <element signature="e#3519#3876#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -109,7 +101,7 @@
       <file leaf-file-name="meadowlark2.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/meadowlark2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1026">
+            <state vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1026">
               <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
               <folding />
             </state>
@@ -172,10 +164,10 @@
         <option value="$PROJECT_DIR$/modules/data.js" />
         <option value="$PROJECT_DIR$/views/layouts/tes-header.hbs" />
         <option value="$PROJECT_DIR$/controller/navigations.js" />
-        <option value="$PROJECT_DIR$/model/job.js" />
-        <option value="$PROJECT_DIR$/controller/jobs.js" />
         <option value="$PROJECT_DIR$/meadowlark2.js" />
+        <option value="$PROJECT_DIR$/model/job.js" />
         <option value="$PROJECT_DIR$/views/partials/jobs/jobOfWeek.hbs" />
+        <option value="$PROJECT_DIR$/controller/jobs.js" />
       </list>
     </option>
   </component>
@@ -246,60 +238,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Meadowlark" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meadowlark" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meadowlark" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meadowlark" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meadowlark" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meadowlark" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meadowlark" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -660,7 +598,7 @@
       <workItem from="1416879008406" duration="4321000" />
       <workItem from="1416945276132" duration="26272000" />
       <workItem from="1417261510642" duration="5343000" />
-      <workItem from="1417356303063" duration="8764000" />
+      <workItem from="1417356303063" duration="14280000" />
     </task>
     <task id="LOCAL-00001" summary="Moved the partials registering to a function">
       <created>1415904137635</created>
@@ -762,11 +700,15 @@
       <created>1417359776532</created>
       <updated>1417359776532</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added job of week">
+      <created>1417373782829</created>
+      <updated>1417373782829</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166288000" />
+    <option name="totallyTimeSpent" value="171804000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -811,8 +753,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20113085" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31859756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18416801" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31859756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -854,7 +796,8 @@
     <MESSAGE value="Added middleware toget featured jobs" />
     <MESSAGE value="Refactored code - more tidy" />
     <MESSAGE value="Refactored code - using request object" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored code - using request object" />
+    <MESSAGE value="Added job of week" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added job of week" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1199,14 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layouts/tes-header.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.851851" vertical-offset="1003" max-vertical-offset="1800">
-          <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/utility.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5584726" vertical-offset="36" max-vertical-offset="756">
@@ -1219,48 +1154,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/jobs/featuredJobs.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6666667" vertical-offset="126" max-vertical-offset="1584">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/navigations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-          <folding>
-            <element signature="e#393#444#0" expanded="false" />
-            <element signature="e#735#1036#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/job.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="346" max-vertical-offset="954">
-          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-          <folding>
-            <element signature="e#606#1166#0" expanded="false" />
-            <element signature="e#1189#1750#0" expanded="false" />
-            <element signature="e#1773#2315#0" expanded="false" />
-            <element signature="e#2339#2894#0" expanded="false" />
-            <element signature="e#2917#3486#0" expanded="false" />
-            <element signature="e#3497#3854#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/jobs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/meadowlark2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1026">
@@ -1269,15 +1162,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/jobs/featuredJobs.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6666667" vertical-offset="126" max-vertical-offset="1584">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/tes-header.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7730871" vertical-offset="1003" max-vertical-offset="1800">
+          <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/navigations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="666">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#393#444#0" expanded="false" />
+            <element signature="e#735#1036#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/jobs/jobOfWeek.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33245382" vertical-offset="288" max-vertical-offset="3222">
-          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+        <state vertical-scroll-proportion="-16.0" vertical-offset="144" max-vertical-offset="936">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/job.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="145" column="56" selection-start-line="145" selection-start-column="56" selection-end-line="145" selection-end-column="56" />
+          <folding>
+            <element signature="e#138#475#0" expanded="false" />
+            <element signature="e#591#10957#0" expanded="false" />
+            <element signature="e#629#1189#0" expanded="false" />
+            <element signature="e#1212#1773#0" expanded="false" />
+            <element signature="e#1796#2338#0" expanded="false" />
+            <element signature="e#2362#2917#0" expanded="false" />
+            <element signature="e#3519#3876#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/jobs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3436754" vertical-offset="0" max-vertical-offset="432">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+            <element signature="e#119#148#0" expanded="false" />
+            <element signature="e#472#669#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -26,6 +26,8 @@ module.exports = Job;
 
 module.exports.create = function ( req, res ) {
 
+   // Job.remove({});
+
     new Job({
         jobId : '277826',
         jobTitle:'Teacher Spanish',
@@ -94,7 +96,7 @@ module.exports.create = function ( req, res ) {
         jobAdvertisementClosingDate: ' 2014-11-28 23:59:00 ',
         salary:'Group 2 L17 - L23 (£81,186 - £89,750)',
         packageId: ' 168 ',
-        statusId: ' 2 ',
+        statusId: ' 1',
         TSL_OrganisationId: '1055170',
         shortDescription: ' As a key member of the British School of Chicago ? s teaching team',
         jobStartDate: ' ',
