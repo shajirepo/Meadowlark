@@ -6,6 +6,8 @@ var utils = require('./modules/utility');
 var data = require('./modules/data');
 var navigations = require('./controller/navigations');
 var jobs = require('./controller/jobs');
+var jobsStatus = require('./controller/jobsStatus');
+var packages = require('./controller/packages');
 
 var app = express();
 
@@ -17,6 +19,8 @@ app.use(session({secret: '1234567890QWERTY'}));
 
 app.use('/', navigations.menuData)
         //.use(jobs.createJobs)
+        //.use(jobsStatus.createJobStatus)
+        //.use(packages.createPackages)
         .use(navigations.navData)
         .use(jobs.featuredJobs)
         .use(jobs.jobOfWeek)

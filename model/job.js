@@ -26,7 +26,7 @@ module.exports = Job;
 
 module.exports.create = function ( req, res ) {
 
-   // Job.remove({});
+   Job.remove({});
 
     new Job({
         jobId : '277826',

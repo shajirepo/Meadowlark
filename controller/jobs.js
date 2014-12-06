@@ -3,6 +3,9 @@
  */
 
 var jobs = require('../model/job');
+var jobsStatus = require('./jobsStatus');
+var packages = require('./packages');
+
 
 exports.createJobs = function(req,res){
     jobs.create(req,res);
@@ -10,6 +13,7 @@ exports.createJobs = function(req,res){
 
 exports.featuredJobs =  function (req, res, next) {
    //jobs.create(req,res);
+    packages.createPackages(req,res, next);
     jobs.find({statusId:2}).limit(4).exec(function(err, jobs) {
         if (err) return next(err);
         console.dir('JOBS; ' + jobs);
