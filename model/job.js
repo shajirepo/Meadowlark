@@ -5,6 +5,9 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
+//var jobStatus = mongoose.model('./jobStatus');
+
+
 var jobSchema = new Schema({
     jobId: Number,
     jobTitle: String,
@@ -13,7 +16,7 @@ var jobSchema = new Schema({
     jobAdvertisementClosingDate: Date,
     salary: String,
     packageId: Number,
-    statusId: Number,
+    status:[jobStatusSchema1],
     TSL_OrganisationId: Number,
     shortDescription: String,
     jobStartDate: Date,
@@ -43,10 +46,10 @@ module.exports.create = function ( req, res ) {
             Status: 1,
             priority: 2
         },
-        statusId: {
+        status: [{
             statusId: 2,
             statusName: 'Published'
-        },
+        }],
         TSL_OrganisationId: '1055170',
         shortDescription: 'As a key member of the British School of Chicagos teaching team',
         jobStartDate: ' ',
@@ -68,10 +71,10 @@ module.exports.create = function ( req, res ) {
             Status: 1,
             priority: 2
         },
-        StatusId: {
+        status: [{
             statusId: 2,
             statusName: 'Published'
-        },
+        }],
         TSL_OrganisationId: ' 1055170 ',
         shortDescription: ' As a key member of the British School of Chicagos teaching team',
         jobStartDate: ' ',
@@ -93,10 +96,10 @@ module.exports.create = function ( req, res ) {
             Status: 1,
             priority: 2
         },
-        statusId: {
+        status: [{
             statusId: 2,
             statusName: 'Published'
-        },
+        }],
         TSL_OrganisationId: ' 1055170 ',
         shortDescription: ' As a key member of the British School of Chicago ? s teaching team',
         jobStartDate: ' ',
@@ -118,10 +121,10 @@ module.exports.create = function ( req, res ) {
              Status: 1,
              priority: 2
          },
-         statusId: {
+         status: [{
              statusId: 2,
              statusName: 'Published'
-         },
+         }],
          TSL_OrganisationId: '1055170',
          shortDescription: ' As a key member of the British School of Chicago ? s teaching team',
          jobStartDate: ' ',
@@ -143,10 +146,10 @@ module.exports.create = function ( req, res ) {
             Status: 1,
             priority: 2
         },
-        statusId:{
+        status:[{
             statusId: 1,
             statusName: 'Hold'
-        },
+        }],
         TSL_OrganisationId: '1055170',
         shortDescription: ' As a key member of the British School of Chicago ? s teaching team',
         jobStartDate: ' ',
@@ -183,6 +186,16 @@ module.exports.create = function ( req, res ) {
 //            your main involvement will be in the d ', JobStartDate: ' ', ExternalId: ' 04C74E0001 '}).save();
 //            new Job({ JobId: ' 277806 ', JobClosingDate: ' 2014 - 12 - 18 00 : 00 : 00 ', JobAdvertisementDate: ' 2014 - 11 - 19 16 : 20 : 00 ', JobAdvertisementClosingDate: ' 2014 - 12 - 17 23 : 59 : 00 ', PackageId: ' 174 ', StatusId: ' 2 ' TSL_OrganisationId: ' 1034244 ', ShortDescription: ' ', JobStartDate: ' ', ExternalId: ' 04C78D0001 '}).save();
 }
+
+
+var jobStatusSchema1 = new Schema({
+    statusId:Number,
+    statusName:String
+})
+
+exports.jobStatusSchema2 = jobStatusSchema1;
+var JobStatus1 = mongoose.model('JobStatus1', jobStatusSchema1);
+
 
 
 // Find all jobs.

@@ -12,7 +12,7 @@ var jobStatusSchema = new Schema({
 
 var JobStatus = mongoose.model('JobStatus', jobStatusSchema);
 module.exports = JobStatus;
-
+exports.jobStatusSchema = jobStatusSchema;
 
 module.exports.create = function ( req, res ) {
 
