@@ -4,10 +4,10 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var utils = require('./modules/utility');
 var data = require('./modules/data');
-var navigations = require('./controller/navigations');
-var jobs = require('./controller/jobs');
-var jobsStatus = require('./controller/jobsStatus');
-var packages = require('./controller/packages');
+var navigationCtrlr = require('./controller/navigationsController');
+var jobsCtrlr = require('./controller/jobsController');
+var jobsStatus = require('./controller/jobsStatusController');
+var packages = require('./controller/packagesController');
 
 var app = express();
 
@@ -17,18 +17,12 @@ app.use(express.static(__dirname + '/public'));
 app.use(cookieParser());
 app.use(session({secret: '1234567890QWERTY'}));
 
-app.use('/', navigations.menuData)
-        //.use(jobs.createJobs)
-        //.use(jobsStatus.createJobStatus)
-        //.use(packages.createPackages)
-        .use(navigations.navData)
-        .use(jobs.featuredJobs)
-        .use(jobs.jobOfWeek)
-
-
+app.use('/', navigationCtrlr.menuData)
+       .use(navigationCtrlr.navData)
+        .use(jobsCtrlr.featuredJobs)
+        .use(jobsCtrlr.jobOfWeek)
 
 require('./routes/routes')(app);
-
 
 var hbsConfig = hbs.express3(
     {
@@ -46,6 +40,7 @@ utils.registerPartials(hbs,'');
 utils.registerPartials(hbs,'/jobs');
 
 utils.dbSetup();
+//data.populateData();
 //utils.serviceSetup();
 
 app.listen(app.get('port'), function(){

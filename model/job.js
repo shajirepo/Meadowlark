@@ -29,16 +29,26 @@ module.exports.create = function ( req, res ) {
    Job.remove({});
 
     new Job({
-        jobId : '277826',
-        jobTitle:'Teacher Spanish',
-        jobClosingDate : '2014-11-28 00:00:00',
-        jobAdvertisementDate : '2014-11-19 00:00:00',
-        jobAdvertisementClosingDate : '2014-11-28 23:59:00',
-        salary:'Group 2 L15 - L21 (£61,186 - £69,750)',
-        packageId : '168',
-        statusId : '2',
-        TSL_OrganisationId : '1055170',
-        shortDescription : 'As a key member of the British School of Chicagos teaching team',
+        jobId: '277826',
+        jobTitle: 'Teacher Spanish',
+        jobClosingDate: '2014-11-28 00:00:00',
+        jobAdvertisementDate: '2014-11-19 00:00:00',
+        jobAdvertisementClosingDate: '2014-11-28 23:59:00',
+        salary: 'Group 2 L15 - L21 (£61,186 - £69,750)',
+        packageId: {
+            PackageId: 168,
+            PackageName: 'Jobs - silver',
+            DateCreated: '2011-11-17T11:10',
+            DateCreated: '2011-11-17T11:10',
+            Status: 1,
+            priority: 2
+        },
+        statusId: {
+            statusId: 2,
+            statusName: 'Published'
+        },
+        TSL_OrganisationId: '1055170',
+        shortDescription: 'As a key member of the British School of Chicagos teaching team',
         jobStartDate: ' ',
         location: 'China',
         externalId: '04C6H70021'
@@ -50,8 +60,18 @@ module.exports.create = function ( req, res ) {
         jobAdvertisementDate: ' 2014-11-19 00:00:00 ',
         jobAdvertisementClosingDate: ' 2014-11-28 23:59:00 ',
         salary:'Group 1 L14 - L20 (£51,186 - £59,750)',
-        packageId: ' 168 ',
-        StatusId: ' 2 ',
+        packageId: {
+            PackageId: 168,
+            PackageName: 'Jobs - silver',
+            DateCreated: '2011-11-17T11:10',
+            DateCreated: '2011-11-17T11:10',
+            Status: 1,
+            priority: 2
+        },
+        StatusId: {
+            statusId: 2,
+            statusName: 'Published'
+        },
         TSL_OrganisationId: ' 1055170 ',
         shortDescription: ' As a key member of the British School of Chicagos teaching team',
         jobStartDate: ' ',
@@ -65,8 +85,18 @@ module.exports.create = function ( req, res ) {
         jobAdvertisementDate: ' 2014-11-19 00:00:00 ',
         jobAdvertisementClosingDate: ' 2014-11-28 23:59:00 ',
         salary:'£62,186 - £71,750)',
-        packageId: ' 168 ',
-        statusId: ' 2 ',
+        packageId: {
+            PackageId: 167,
+            PackageName: 'Jobs - bronze',
+            DateCreated: '2011-11-17T11:10',
+            DateCreated: '2011-11-17T11:10',
+            Status: 1,
+            priority: 2
+        },
+        statusId: {
+            statusId: 2,
+            statusName: 'Published'
+        },
         TSL_OrganisationId: ' 1055170 ',
         shortDescription: ' As a key member of the British School of Chicago ? s teaching team',
         jobStartDate: ' ',
@@ -80,8 +110,18 @@ module.exports.create = function ( req, res ) {
          jobAdvertisementDate: ' 2014-11-19 00:00:00 ',
          jobAdvertisementClosingDate: ' 2014-11-28 23:59:00 ',
          salary:'£41,186 - £49,750)',
-         packageId: ' 168 ',
-         statusId: ' 2 ',
+         packageId:{
+             PackageId: 172,
+             PackageName: 'Jobs - gold',
+             DateCreated: '2011-11-17T11:10',
+             DateCreated: '2011-11-17T11:10',
+             Status: 1,
+             priority: 2
+         },
+         statusId: {
+             statusId: 2,
+             statusName: 'Published'
+         },
          TSL_OrganisationId: '1055170',
          shortDescription: ' As a key member of the British School of Chicago ? s teaching team',
          jobStartDate: ' ',
@@ -95,8 +135,18 @@ module.exports.create = function ( req, res ) {
         jobAdvertisementDate: ' 2014-11-19 00:00:00 ',
         jobAdvertisementClosingDate: ' 2014-11-28 23:59:00 ',
         salary:'Group 2 L17 - L23 (£81,186 - £89,750)',
-        packageId: ' 168 ',
-        statusId: ' 1',
+        packageId: {
+            ackageId: 174,
+            PackageName: 'Jobs - starter',
+            DateCreated: '2011-11-17T11:10',
+            DateCreated: '2011-11-17T11:10',
+            Status: 1,
+            priority: 2
+        },
+        statusId:{
+            statusId: 1,
+            statusName: 'Hold'
+        },
         TSL_OrganisationId: '1055170',
         shortDescription: ' As a key member of the British School of Chicago ? s teaching team',
         jobStartDate: ' ',

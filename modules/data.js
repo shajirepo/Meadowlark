@@ -4,6 +4,11 @@
 var navigationItems = require('../model/navigation');
 var jobs = require('../model/job');
 
+var jobsCtrlr = require('../controller/jobsController');
+var jobStatusCtrlr = require('../controller/jobsStatusController');
+var packagesCtrlr = require('../controller/packagesController');
+
+
     module.exports = {
         menuItems: [
             {   href: '/jobs/', title: 'JOBS'},
@@ -52,3 +57,9 @@ var jobs = require('../model/job');
 
 
     }
+
+module.exports.populateData = function(req,res,next){
+    jobsCtrlr.createJobs(req,res,next);
+    jobStatusCtrlr.createJobStatus(req,res,next);
+    packagesCtrlr.createPackages(req,res,next);
+}

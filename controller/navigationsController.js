@@ -1,5 +1,5 @@
 var navigations = require('../model/navigation');
-var jobs = require('./jobs')
+var jobs = require('./jobsController')
 var data = require('../modules/data')
 
 
