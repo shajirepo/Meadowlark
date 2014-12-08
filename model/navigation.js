@@ -3,12 +3,7 @@
  */
 
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-
-var navigationSchema = new Schema({
-    href: String,
-    title: String
-})
+var navigationSchema = require('./schema/navigationSchema');
 
 var Navigation = mongoose.model('Navigation', navigationSchema);
 module.exports = Navigation;

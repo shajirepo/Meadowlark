@@ -10,8 +10,8 @@ exports.createJobs = function(req,res, next){
 }
 
 exports.featuredJobs =  function (req, res, next) {
-    //jobs.create(req,res);
-   jobs.find().limit(4).exec(function(err, jobs) {
+   // jobs.create(req,res);
+   jobs.find({'status.statusId':2}).limit(4).exec(function(err, jobs) {
         if (err) return next(err);
         console.dir('JOBS; ' + jobs);
         req.featuredJobs =jobs;

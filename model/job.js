@@ -3,26 +3,7 @@
  */
 
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-
-//var jobStatus = mongoose.model('./jobStatus');
-
-
-var jobSchema = new Schema({
-    jobId: Number,
-    jobTitle: String,
-    jobClosingDate: Date,
-    jobAdvertisementDate: Date,
-    jobAdvertisementClosingDate: Date,
-    salary: String,
-    packageId: Number,
-    status:[jobStatusSchema1],
-    TSL_OrganisationId: Number,
-    shortDescription: String,
-    jobStartDate: Date,
-    location: String,
-    externalId: String
-})
+var jobSchema = require('./schema/jobSchema');
 
 var Job = mongoose.model('Job', jobSchema);
 module.exports = Job;
@@ -38,14 +19,14 @@ module.exports.create = function ( req, res ) {
         jobAdvertisementDate: '2014-11-19 00:00:00',
         jobAdvertisementClosingDate: '2014-11-28 23:59:00',
         salary: 'Group 2 L15 - L21 (£61,186 - £69,750)',
-        packageId: {
+        packageId: [{
             PackageId: 168,
             PackageName: 'Jobs - silver',
             DateCreated: '2011-11-17T11:10',
             DateCreated: '2011-11-17T11:10',
             Status: 1,
             priority: 2
-        },
+        }],
         status: [{
             statusId: 2,
             statusName: 'Published'
@@ -63,14 +44,14 @@ module.exports.create = function ( req, res ) {
         jobAdvertisementDate: ' 2014-11-19 00:00:00 ',
         jobAdvertisementClosingDate: ' 2014-11-28 23:59:00 ',
         salary:'Group 1 L14 - L20 (£51,186 - £59,750)',
-        packageId: {
+        packageId: [{
             PackageId: 168,
             PackageName: 'Jobs - silver',
             DateCreated: '2011-11-17T11:10',
             DateCreated: '2011-11-17T11:10',
             Status: 1,
             priority: 2
-        },
+        }],
         status: [{
             statusId: 2,
             statusName: 'Published'
@@ -88,14 +69,14 @@ module.exports.create = function ( req, res ) {
         jobAdvertisementDate: ' 2014-11-19 00:00:00 ',
         jobAdvertisementClosingDate: ' 2014-11-28 23:59:00 ',
         salary:'£62,186 - £71,750)',
-        packageId: {
+        packageId: [{
             PackageId: 167,
             PackageName: 'Jobs - bronze',
             DateCreated: '2011-11-17T11:10',
             DateCreated: '2011-11-17T11:10',
             Status: 1,
             priority: 2
-        },
+        }],
         status: [{
             statusId: 2,
             statusName: 'Published'
@@ -113,14 +94,14 @@ module.exports.create = function ( req, res ) {
          jobAdvertisementDate: ' 2014-11-19 00:00:00 ',
          jobAdvertisementClosingDate: ' 2014-11-28 23:59:00 ',
          salary:'£41,186 - £49,750)',
-         packageId:{
+         packageId:[{
              PackageId: 172,
              PackageName: 'Jobs - gold',
              DateCreated: '2011-11-17T11:10',
              DateCreated: '2011-11-17T11:10',
              Status: 1,
              priority: 2
-         },
+         }],
          status: [{
              statusId: 2,
              statusName: 'Published'
@@ -138,14 +119,14 @@ module.exports.create = function ( req, res ) {
         jobAdvertisementDate: ' 2014-11-19 00:00:00 ',
         jobAdvertisementClosingDate: ' 2014-11-28 23:59:00 ',
         salary:'Group 2 L17 - L23 (£81,186 - £89,750)',
-        packageId: {
-            ackageId: 174,
+        packageId: [{
+            PackageId: 174,
             PackageName: 'Jobs - starter',
             DateCreated: '2011-11-17T11:10',
             DateCreated: '2011-11-17T11:10',
             Status: 1,
             priority: 2
-        },
+        }],
         status:[{
             statusId: 1,
             statusName: 'Hold'
@@ -186,17 +167,6 @@ module.exports.create = function ( req, res ) {
 //            your main involvement will be in the d ', JobStartDate: ' ', ExternalId: ' 04C74E0001 '}).save();
 //            new Job({ JobId: ' 277806 ', JobClosingDate: ' 2014 - 12 - 18 00 : 00 : 00 ', JobAdvertisementDate: ' 2014 - 11 - 19 16 : 20 : 00 ', JobAdvertisementClosingDate: ' 2014 - 12 - 17 23 : 59 : 00 ', PackageId: ' 174 ', StatusId: ' 2 ' TSL_OrganisationId: ' 1034244 ', ShortDescription: ' ', JobStartDate: ' ', ExternalId: ' 04C78D0001 '}).save();
 }
-
-
-var jobStatusSchema1 = new Schema({
-    statusId:Number,
-    statusName:String
-})
-
-exports.jobStatusSchema2 = jobStatusSchema1;
-var JobStatus1 = mongoose.model('JobStatus1', jobStatusSchema1);
-
-
 
 // Find all jobs.
 Job.find(function(err, jobs) {

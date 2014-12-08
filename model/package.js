@@ -3,16 +3,7 @@
  */
 
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-
-var packageSchema = new Schema({
-    PackageId: Number,
-    PackageName: String,
-    DateCreated: Date,
-    DateCreated: Date,
-    Status: Number,
-    priority: Number
-})
+var packageSchema = require('./schema/packageSchema');
 
 var package = mongoose.model('package', packageSchema);
 module.exports = package;
