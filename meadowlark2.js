@@ -3,11 +3,11 @@ var hbs = require('express-hbs');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var utils = require('./modules/utility');
-var data = require('./modules/data');
+
+// Setup navigation and jobs controllers
 var navigationCtrlr = require('./controller/navigationsController');
 var jobsCtrlr = require('./controller/jobsController');
-var jobsStatus = require('./controller/jobsStatusController');
-var packages = require('./controller/packagesController');
+
 
 var app = express();
 
@@ -16,6 +16,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.use(cookieParser());
 app.use(session({secret: '1234567890QWERTY'}));
+
 
 app.use('/', navigationCtrlr.menuData)
        .use(navigationCtrlr.navData)

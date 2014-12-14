@@ -6,7 +6,7 @@ var jobs = require('../model/job');
 
 exports.createJobs = function(req,res, next){
     jobs.create(req,res);
-    next();
+    //next();
 }
 
 exports.featuredJobs =  function (req, res, next) {
@@ -21,7 +21,7 @@ exports.featuredJobs =  function (req, res, next) {
 
 exports.jobOfWeek =  function (req, res, next) {
     // jobs.create(req,res);
-    jobs.find(function(err, jobs) {
+    jobs.find().exec(function(err, jobs) {
         if (err) return next(err);
         console.dir('JOBWEEK; ' + jobs);
         req.jobOfWeek =jobs;
@@ -29,3 +29,4 @@ exports.jobOfWeek =  function (req, res, next) {
     });
 }
 
+exports.createJobs()
